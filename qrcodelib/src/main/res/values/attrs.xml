@@ -1,0 +1,35 @@
+<resources>
+    <declare-styleable name="ViewfinderView">
+        <attr name="maskColor" format="color" />
+        <attr name="frameColor" format="color" />
+        <attr name="cornerColor" format="color"/>
+        <attr name="laserColor" format="color"/>
+        <attr name="resultPointColor" format="color"/>
+        <attr name="text" format="string"/>
+        <attr name="textColor" format="color"/>
+        <attr name="textSize" format="dimension"/>
+        <attr name="textPadding" format="dimension"/>
+        <attr name="textLocation" format="enum">
+            <enum name="top" value="0"/>
+            <enum name="bottom" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="CaptureView">
+        <attr name="cv_maskColor" format="color" />
+        <attr name="cv_frameColor" format="color" />
+        <attr name="cv_cornerColor" format="color"/>
+        <attr name="cv_laserColor" format="color"/>
+        <attr name="cv_resultPointColor" format="color"/>
+        <attr name="cv_text" format="string"/>
+        <attr name="cv_textColor" format="color"/>
+        <attr name="cv_textSize" format="dimension"/>
+        <attr name="cv_textPadding" format="dimension"/>
+        <attr name="cv_topOffset" format="integer"/>
+        <attr name="cv_textLocation" format="enum">
+            <enum name="top" value="0"/>
+            <enum name="bottom" value="1"/>
+        </attr>
+    </declare-styleable>
+
+</resources>

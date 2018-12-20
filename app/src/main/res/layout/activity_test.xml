@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.sencent.qrcodelib.CaptureView
+            android:id="@+id/cv_qrcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cv_text="@string/tips_scan_code"
+            app:cv_textSize="@dimen/size_14sp"
+            app:cv_frameColor="@color/green"
+            app:cv_cornerColor="@color/green"
+            app:cv_topOffset="-80"
+            app:cv_resultPointColor="@color/colorAccent"
+            app:cv_textLocation="bottom"
+            app:cv_laserColor="@color/green"
+    />
+
+    <ImageView
+            android:id="@+id/ivFlash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/flash_selected_selector"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="100dp"
+            style="@style/OnClick"/>
+
+
+    <TextView
+            android:id="@+id/openAlbum"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="88dp"
+            android:text="从相册选取二维码"
+            android:textColor="#1BD197"
+            android:textSize="14sp"
+            style="@style/OnClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+</android.support.constraint.ConstraintLayout>

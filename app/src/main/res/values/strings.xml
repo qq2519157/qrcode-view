@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">qrcode</string>
+    <string name="tips_scan_code">将二维码放入框内，即可自动扫描\n 或从相册选取二维码</string>
+    <string name="in_activity">CaptureView在Activity中</string>
+    <string name="in_fragmet">CaptureView在Fragmrnt中</string>
+</resources>

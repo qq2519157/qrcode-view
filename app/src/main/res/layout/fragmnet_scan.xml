@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+            android:id="@+id/tv_notice"
+            android:text="这是一个在Fragment中的二维码扫描模块"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <com.sencent.qrcodelib.CaptureView
+            android:id="@+id/captureview"
+            android:layout_width="match_parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_notice"
+            app:cv_text="@string/tips_scan_code"
+            app:cv_textSize="@dimen/size_14sp"
+            app:cv_frameColor="@color/red"
+            app:cv_cornerColor="@color/red"
+            app:cv_resultPointColor="@color/colorAccent"
+            app:cv_textLocation="bottom"
+            app:cv_textColor="@color/red"
+            app:cv_laserColor="@color/red"
+            app:cv_topOffset="-200"
+            android:layout_height="wrap_content"/>
+
+</android.support.constraint.ConstraintLayout>
